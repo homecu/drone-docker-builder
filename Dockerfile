@@ -6,4 +6,5 @@ RUN set -x && \
     findutils \
     git \
     hostname \
-    make
+    make \
+    epel-release
