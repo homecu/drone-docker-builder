@@ -11,3 +11,4 @@ RUN set -x && \
     git \
     hostname \
     make \
+    docker-compose
