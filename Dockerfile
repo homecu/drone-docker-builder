@@ -1,4 +1,8 @@
 FROM centos:7.3.1611
+RUN set -x && \
+    yum -y update && \
+    yum -y install \
+    epel-release
 
 RUN set -x && \
     yum -y install \
@@ -7,4 +11,3 @@ RUN set -x && \
     git \
     hostname \
     make \
-    epel-release
