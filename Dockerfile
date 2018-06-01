@@ -1,4 +1,5 @@
-FROM centos:7.3.1611
+FROM centos:7.4.1708
+
 RUN set -x && \
     yum -y update && \
     yum -y install \
