@@ -7,6 +7,7 @@ RUN set -x && \
 
 RUN set -x && \
     yum -y install \
+    awscli \
     docker \
     findutils \
     git \
