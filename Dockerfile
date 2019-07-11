@@ -6,9 +6,14 @@ RUN set -x && \
     epel-release
 
 RUN set -x && \
+    yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+
+RUN set -x && \
     yum -y install \
     awscli \
-    docker \
+    docker-ce \
     findutils \
     git \
     hostname \
